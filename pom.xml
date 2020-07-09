@@ -10,10 +10,8 @@
 
     <modules>
         <module>servlet</module>
-        <module>feature-generator</module>
         <module>demo-app</module>
         <module>vaadin-feature</module>
-        <module>cdi</module>
         <module>main-view</module>
     </modules>
     <properties>

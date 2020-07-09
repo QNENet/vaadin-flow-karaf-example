@@ -6,11 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="main-view" />
-        <module name="demo-app" />
-        <module name="karaf-feature-generator" />
         <module name="vaadin-osgi-servlet" />
-        <module name="cdi-bundle" />
+        <module name="demo-app" />
+        <module name="main-view" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.1">

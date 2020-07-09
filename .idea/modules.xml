@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cdi/cdi-bundle.iml" filepath="$PROJECT_DIR$/cdi/cdi-bundle.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-app/demo-app.iml" filepath="$PROJECT_DIR$/demo-app/demo-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/feature-generator/karaf-feature-generator.iml" filepath="$PROJECT_DIR$/feature-generator/karaf-feature-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/main-view/main-view.iml" filepath="$PROJECT_DIR$/main-view/main-view.iml" />
       <module fileurl="file://$PROJECT_DIR$/vaadin-feature/vaadin-feature.iml" filepath="$PROJECT_DIR$/vaadin-feature/vaadin-feature.iml" />
       <module fileurl="file://$PROJECT_DIR$/vaadin-flow-karaf-example.iml" filepath="$PROJECT_DIR$/vaadin-flow-karaf-example.iml" />
