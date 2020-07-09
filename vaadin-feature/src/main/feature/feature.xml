@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<features xmlns="http://karaf.apache.org/xmlns/features/v1.5.0" name="karaf-feature">
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.6.0" name="karaf-feature">
 
     <!-- Minimal Vaadin Demo -->
     <feature name="vaadin-demo" description="Vaadin Servlet" version="1.0.0.SNAPSHOT">
@@ -9,7 +9,7 @@
     </feature>
 
     <feature name="vaadin-servlet" description="Vaadin Servlet" version="1.0.0.SNAPSHOT">
-        <feature prerequisite="true" dependency="false">vaadin-full</feature>
+        <feature prerequisite="true" dependency="false">vaadin-base</feature>
         <!-- Vaadin Servlet Starter -->
         <bundle>mvn:org.pragmaticminds.plc4x/vaadin-osgi-servlet/1.0.0-SNAPSHOT</bundle>
     </feature>
@@ -38,11 +38,11 @@
         <bundle>mvn:net.bytebuddy/byte-buddy/1.9.3</bundle>
         <bundle>mvn:com.vaadin.external/gentyref/1.2.0.vaadin1</bundle>
         <bundle>wrap:mvn:com.vaadin/vaadin-core/13.0.4</bundle>
-    </feature>
+<!--    </feature>-->
 
-    <!-- TODO Split Vaadin in different small features for the different components -->
-    <feature name="vaadin-full" description="Vaadin Feature with all components" version="1.0.0.SNAPSHOT">
-        <feature prerequisite="true" dependency="false">vaadin-base</feature>
+<!--    &lt;!&ndash; TODO Split Vaadin in different small features for the different components &ndash;&gt;-->
+<!--    <feature name="vaadin-full" description="Vaadin Feature with all components" version="1.0.0.SNAPSHOT">-->
+<!--        <feature prerequisite="true" dependency="false">vaadin-base</feature>-->
         <bundle>mvn:com.vaadin/vaadin-material-theme/1.4.3</bundle>
         <bundle>mvn:com.vaadin/vaadin-accordion-flow/1.0.3</bundle>
         <bundle>wrap:mvn:org.webjars.bowergithub.vaadin/vaadin-accordion/1.0.0</bundle>
