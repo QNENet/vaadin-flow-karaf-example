@@ -16,6 +16,10 @@
     </modules>
     <properties>
         <vaadin-bom.version>13.0.0</vaadin-bom.version>
+        <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
+        <maven-bundle-plugin.version>4.2.1</maven-bundle-plugin.version>
+        <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     </properties>
     <packaging>pom</packaging>
 
@@ -40,6 +44,13 @@
                 <scope>import</scope>
                 <version>${vaadin-bom.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>flow-osgi</artifactId>
+                <scope>provided</scope>
+                <version>1.4.3</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -76,6 +87,7 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven-bundle-plugin.version}</version>
                 <extensions>true</extensions>
 <!--                <configuration>-->
 <!--                    <instructions>-->

@@ -45,8 +45,18 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.webjars.bowergithub.vaadin:vaadin-themable-mixin:1.4.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.webjars.bowergithub.vaadin:vaadin-material-styles:1.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:osgi.cmpn:7.0.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.vaadin:flow-osgi:1.4.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.vaadin:flow-osgi:2.2.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpclient-osgi:4.5.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpmime:4.5.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpclient-cache:4.5.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:fluent-hc:4.5.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore-osgi:4.4.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore-nio:4.4.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.ops4j.pax.web:pax-web-jetty:7.2.10" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.ops4j.base:ops4j-base-util-xml:1.5.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.ops4j.base:ops4j-base-lang:1.5.0" level="project" />
