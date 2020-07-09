@@ -18,13 +18,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <vaadin.version>${vaadin-bom.version}</vaadin.version>
-
-<!--        <felix.version>6.0.0</felix.version>-->
-<!--        <felix.distribution>-->
-<!--            http://central.maven.org/maven2/org/apache/felix/org.apache.felix.main.distribution/${felix.version}/org.apache.felix.main.distribution-${felix.version}.zip-->
-<!--        </felix.distribution>-->
-<!--        <felix.home>felix-framework-${felix.version}</felix.home>-->
-<!--        &lt;!&ndash;        <osgi.bundle.version>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}</osgi.bundle.version>&ndash;&gt;-->
         <osgi.bundle.version>${project.version}</osgi.bundle.version>
     </properties>
 
