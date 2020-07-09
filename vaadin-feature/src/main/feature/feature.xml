@@ -15,7 +15,7 @@
     </feature>
 
     <feature name="vaadin-base" description="Base for Vaadin on Karaf" version="1.0.0.SNAPSHOT">
-        <feature prerequisite="true" dependency="false">wrap</feature>
+<!--        <feature prerequisite="true" dependency="false">wrap</feature>-->
         <feature prerequisite="true" dependency="false">jetty</feature>
         <feature prerequisite="true" dependency="false">http</feature>
         <feature prerequisite="true" dependency="false">pax-war</feature>
