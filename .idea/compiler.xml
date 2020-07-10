@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="vaadin-osgi-servlet" />
         <module name="demo-app" />
+        <module name="vaadin-osgi-servlet" />
         <module name="main-view" />
       </profile>
     </annotationProcessing>
@@ -16,8 +16,8 @@
       <module name="demo-app" target="1.8" />
       <module name="karaf-feature-generator" target="1.5" />
       <module name="main-view" target="8" />
-      <module name="vaadin-feature" target="1.5" />
-      <module name="vaadin-flow-karaf-example" target="1.5" />
+      <module name="vaadin-feature" target="1.8" />
+      <module name="vaadin-flow-karaf-example" target="1.8" />
       <module name="vaadin-osgi-servlet" target="1.8" />
     </bytecodeTargetLevel>
   </component>

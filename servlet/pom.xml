@@ -36,7 +36,7 @@
             <plugin>
                 <groupId>biz.aQute.bnd</groupId>
                 <artifactId>bnd-maven-plugin</artifactId>
-                <version>4.1.0</version>
+                <version>${bnd-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -84,7 +84,7 @@
             <plugin>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-maven-plugin</artifactId>
-                <version>14.0.2</version>
+                <version>${vaadin-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <goals>
