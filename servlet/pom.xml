@@ -13,13 +13,13 @@
     <name>vaadin-osgi-servlet</name>
     <packaging>jar</packaging>
 
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <vaadin.version>${vaadin-bom.version}</vaadin.version>
-        <osgi.bundle.version>${project.version}</osgi.bundle.version>
-    </properties>
+<!--    <properties>-->
+<!--        <maven.compiler.source>1.8</maven.compiler.source>-->
+<!--        <maven.compiler.target>1.8</maven.compiler.target>-->
+<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--        <vaadin.version>${vaadin-bom.version}</vaadin.version>-->
+<!--        <osgi.bundle.version>${project.version}</osgi.bundle.version>-->
+<!--    </properties>-->
 
     <repositories>
         <!-- Repository used by many Vaadin add-ons -->
