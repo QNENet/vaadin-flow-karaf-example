@@ -14,7 +14,9 @@
         <module>vaadin-feature</module>
         <module>main-view</module>
     </modules>
+
     <properties>
+        <vaadin.version>13.0.0</vaadin.version>
         <vaadin-bom.version>13.0.0</vaadin-bom.version>
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
         <maven-bundle-plugin.version>4.2.1</maven-bundle-plugin.version>
@@ -40,6 +42,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-core</artifactId>
+                <scope>provided</scope>
+                <version>${vaadin.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-bom</artifactId>
@@ -82,45 +91,54 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+<!--            <scope>provided</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-core</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>flow-osgi</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-<!--            <version>3.1.0</version>-->
-<!--            <scope>provided</scope>-->
+            <!--            <version>3.1.0</version>-->
+            <!--            <scope>provided</scope>-->
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.osgi</groupId>-->
-<!--            <artifactId>osgi.core</artifactId>-->
-<!--            <version>6.0.0</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId></groupId>-->
-<!--            <artifactId>org.osgi</artifactId>-->
-<!--        </dependency>-->
-<!--        Annotation support-->
-<!--        <dependency>-->
-<!--            <groupId>org.osgi</groupId>-->
-<!--            <artifactId>org.osgi.annotation</artifactId>-->
-<!--            <version>6.0.0</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.osgi</groupId>-->
-<!--            <artifactId>org.osgi.service.component.annotations</artifactId>-->
-<!--            <version>1.3.0</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.slf4j</groupId>-->
-<!--            <artifactId>slf4j-api</artifactId>-->
-<!--            <version>1.7.26</version>-->
-<!--            <scope>provided</scope>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.osgi</groupId>-->
+        <!--            <artifactId>osgi.core</artifactId>-->
+        <!--            <version>6.0.0</version>-->
+        <!--            <scope>provided</scope>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId></groupId>-->
+        <!--            <artifactId>org.osgi</artifactId>-->
+        <!--        </dependency>-->
+        <!--        Annotation support-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.osgi</groupId>-->
+        <!--            <artifactId>org.osgi.annotation</artifactId>-->
+        <!--            <version>6.0.0</version>-->
+        <!--            <scope>provided</scope>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.osgi</groupId>-->
+        <!--            <artifactId>org.osgi.service.component.annotations</artifactId>-->
+        <!--            <version>1.3.0</version>-->
+        <!--            <scope>provided</scope>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.slf4j</groupId>-->
+        <!--            <artifactId>slf4j-api</artifactId>-->
+        <!--            <version>1.7.26</version>-->
+        <!--            <scope>provided</scope>-->
+        <!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -130,13 +148,13 @@
                 <artifactId>maven-bundle-plugin</artifactId>
                 <version>${maven-bundle-plugin.version}</version>
                 <extensions>true</extensions>
-<!--                <configuration>-->
-<!--                    <instructions>-->
-<!--                        &lt;!&ndash;                        <Export-Package>org.foo.myproject.api</Export-Package>&ndash;&gt;-->
-<!--                        &lt;!&ndash;                        <Private-Package>org.foo.myproject.*</Private-Package>&ndash;&gt;-->
-<!--                        <Bundle-Activator>org.pragmaticminds.osgi.ExampleActivator</Bundle-Activator>-->
-<!--                    </instructions>-->
-<!--                </configuration>-->
+                <!--                <configuration>-->
+                <!--                    <instructions>-->
+                <!--                        &lt;!&ndash;                        <Export-Package>org.foo.myproject.api</Export-Package>&ndash;&gt;-->
+                <!--                        &lt;!&ndash;                        <Private-Package>org.foo.myproject.*</Private-Package>&ndash;&gt;-->
+                <!--                        <Bundle-Activator>org.pragmaticminds.osgi.ExampleActivator</Bundle-Activator>-->
+                <!--                    </instructions>-->
+                <!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
